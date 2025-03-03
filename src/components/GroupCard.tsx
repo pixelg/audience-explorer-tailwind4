@@ -8,7 +8,7 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export const GroupCard = ({...props}: CardProps) => {
   return (
-    <Card {...props}>
+    <Card {...props} className='max-w-md'>
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
       </CardHeader>
