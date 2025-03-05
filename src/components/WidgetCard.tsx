@@ -7,7 +7,7 @@ type WidgetCardProps = {
 
 const WidgetCard = ({...props} : WidgetCardProps) => {
   return (
-    <Card {...props} className='max-w-md'>
+    <Card {...props} className='w-full h-full overflow-hidden'>
       <CardHeader>
         <CardTitle>Widget</CardTitle>
       </CardHeader>
