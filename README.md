@@ -15,7 +15,6 @@ _SparrowTV's Audience Explorer enables media companies to create and manage prec
 - **Tooling, testing, build:** [Vite](https://vite.dev/), vite-test, [Playwright](https://playwright.dev/)
 - **SCM CI/CD:** Git, GitHub, GitHub Actions, GitHub Projects
 - **Chart/Graph** TODO: [nivo](https://nivo.rocks/bar/), [chart.js](https://www.chartjs.org/), [D3.js](https://d3js.org/)
-- **?Container?:** TODO: [Docker](https://www.docker.com/) (if necessary)
 - **?DB/Dataflow/MQ?**: TODO: Postgres, MariaDB, MongoDB, RabbitMQ, REDIS, Firebase
 - **?Hosting/Cloud?:** TODO: AWS (Lambda, CDK, SAM), GCP,
 
@@ -24,10 +23,10 @@ _SparrowTV's Audience Explorer enables media companies to create and manage prec
 ## Run Locally
 
 ```bash
-# clone the repository
-git clone https://github.com/pixelg/audience-explorer-tailwind4.git [PROJECT_ NAME]
+# clone the repository into your defined project name or just . to take the name of the git
+git clone https://github.com/pixelg/audience-explorer-tailwind4.git [PROJECT_NAME]
 # change into project directory
-cd audience-explorer
+cd [PROJECT_NAME]
 # install dependencies NOTE: npm install can also be used, but pnpm usually has much better performance
 pnpm install
 # run in dev mode
