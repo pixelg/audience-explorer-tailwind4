@@ -139,12 +139,12 @@ const data = {
   projects: [
     {
       name: "Bar Chart",
-      url: "#",
+      url: "/bar-chart",
       icon: Frame,
     },
     {
       name: "Box Plot Chart",
-      url: "#",
+      url: "/box-plot-chart",
       icon: PieChart,
     },
     // {
