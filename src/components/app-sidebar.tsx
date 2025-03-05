@@ -6,7 +6,7 @@ import {
   Command,
   Frame,
   GalleryVerticalEnd,
-  Map,
+  // Map,
   PieChart,
   Settings2,
   SquareTerminal,
@@ -138,20 +138,20 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
+      name: "Bar Chart",
       url: "#",
       icon: Frame,
     },
     {
-      name: "Sales & Marketing",
+      name: "Box Plot Chart",
       url: "#",
       icon: PieChart,
     },
-    {
-      name: "Travel",
-      url: "#",
-      icon: Map,
-    },
+    // {
+    //   name: "Travel",
+    //   url: "#",
+    //   icon: Map,
+    // },
   ],
 }
 
