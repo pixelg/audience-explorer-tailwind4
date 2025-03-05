@@ -51,22 +51,20 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Metrics",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Bar Chart",
+          url: "/bar-chart",
+          icon: Frame,
         },
         {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
+          title: "Box Plot Chart",
+          url: "/box-plot-chart",
+          icon: PieChart,
         },
       ],
     },
