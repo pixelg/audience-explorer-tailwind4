@@ -6,6 +6,21 @@
 /*---break---*/
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  /* primary colors */
+  --color-dark-cyan-3: #1D2F49;
+  --color-cornflower-blue: #4687E2;
+  --color-light-blue-5: #D6E1F0;
+  /* supporting colors */
+  --color-dark-gray-20: #747474;
+  --color-dark-cyan-2: #016150;
+  --color-dark-gray-2: #475962;
+  --color-dark-gray-3: #5D747F;
+  --color-light-gray-2: #EBEEF0;
+  --color-dark-blue-15: #00907E;
+  --color-dark-gray-1: #222222;
+}
+
 :root {
   font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif, serif;
   font-optical-sizing: auto;
@@ -43,28 +58,6 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
-}
-
-/*.montserrat-<uniquifier> {*/
-/*   font-family: "Montserrat", sans-serif;*/
-/*   font-optical-sizing: auto;*/
-/*   font-weight: <weight>;*/
-/*   font-style: normal;*/
-/*}*/
-
-@theme {
-  /* primary colors */
-  --color-dark-cyan-3: #1D2F49;
-  --color-cornflower-blue: #4687E2;
-  --color-light-blue-5: #D6E1F0;
-  /* supporting colors */
-  --color-dark-gray-20: #747474;
-  --color-dark-cyan-2: #016150;
-  --color-dark-gray-2: #475962;
-  --color-dark-gray-3: #5D747F;
-  --color-light-gray-2: #EBEEF0;
-  --color-dark-blue-15: #00907E;
-  --color-dark-gray-1: #222222;
 }
 
 /*---break---*/
