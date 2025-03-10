@@ -22,10 +22,10 @@ export const SinclairAffiliateTable = ()=>  {
   const [affiliates, setAffiliates] = useState<SinclairAffiliate[]>([]);
 
   useEffect(() => {
-    getListings();
+    loadSinclairAffiliates();
   }, []);
 
-  async function getListings() {
+  async function loadSinclairAffiliates() {
     const { data, error } = await supabase
       .from('sinclair_affiliates')
       .select('*');
