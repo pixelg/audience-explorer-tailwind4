@@ -66,6 +66,11 @@ const data = {
           url: "/box-plot-chart",
           icon: PieChart,
         },
+        {
+          title: "Sinclair Affiliates",
+          url: "/sinclair-affiliates",
+          icon: Frame,
+        },
       ],
     },
     {
