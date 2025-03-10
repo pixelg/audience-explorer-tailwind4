@@ -1,4 +1,5 @@
 import WidgetCard from "@/components/WidgetCard.tsx";
+import {TrendsChart} from "@/components/charts/TrendsChart.tsx";
 
 export const MainRoute = () =>
   <>
@@ -14,7 +15,6 @@ export const MainRoute = () =>
       </div>
     </div>
     <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min p-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.</p>
+      <TrendsChart />
     </div>
   </>
