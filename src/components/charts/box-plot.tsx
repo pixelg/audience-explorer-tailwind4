@@ -1,6 +1,6 @@
 import {ResponsiveBoxPlot} from '@nivo/boxplot'
 import {BoxPlotData} from "@/types/BoxPlotTypes.ts";
-import { BoxPlotTheme } from "@/components/charts/BoxPlotTheme.tsx";
+import { BoxPlotTheme } from "@/components/charts/box-plot-theme.tsx";
 
 type BoxPlotProps = {
   data: BoxPlotData;

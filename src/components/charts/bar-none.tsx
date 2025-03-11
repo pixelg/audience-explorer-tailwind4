@@ -1,6 +1,6 @@
 import { ResponsiveBar } from '@nivo/bar'
 import { BarPlotTypes } from "@/types/BarPlotTypes.ts";
-import { BarNoneTheme } from "@/components/charts/BarNoneTheme.tsx";
+import { BarNoneTheme } from "@/components/charts/bar-none-theme.tsx";
 
 interface BarProps {
   data: readonly BarPlotTypes[];

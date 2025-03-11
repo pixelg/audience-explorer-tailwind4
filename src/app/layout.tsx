@@ -13,7 +13,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import {ModeToggle} from "@/components/themes/ModeToggle.tsx";
+import {ModeToggle} from "@/components/themes/mode-toggle.tsx";
 import {Outlet} from "react-router";
 
 export const DashboardLayout = ()=>  {

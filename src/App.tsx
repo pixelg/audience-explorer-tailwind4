@@ -1,4 +1,4 @@
-import {ThemeProvider} from "@/components/themes/ThemeProvider.tsx";
+import {ThemeProvider} from "@/components/themes/theme-provider.tsx";
 import {AppRouter} from "@/app/app-router.tsx";
 
 export const App  = () =>

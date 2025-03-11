@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {createClient} from "@supabase/supabase-js";
-import { Database } from "@/types/sinclair-affiliate.types.ts";
+import { Database } from "@/types/SinclairAffiliateTypes.ts";
 import {
   Table,
   TableBody,

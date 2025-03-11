@@ -1,5 +1,5 @@
-import WidgetCard from "@/components/WidgetCard.tsx";
-import {TrendsChart} from "@/components/charts/TrendsChart.tsx";
+import WidgetCard from "@/components/widget-card.tsx";
+import {TrendsChart} from "@/components/charts/trends-chart.tsx";
 
 export const MainRoute = () =>
   <>
