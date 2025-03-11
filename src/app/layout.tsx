@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sidebar"
 import {ModeToggle} from "@/components/themes/mode-toggle.tsx";
 import {Outlet} from "react-router";
+import {Brand} from "@/components/brand.tsx";
 
 export const DashboardLayout = ()=>  {
   return (
@@ -40,6 +41,7 @@ export const DashboardLayout = ()=>  {
               </BreadcrumbList>
             </Breadcrumb>
           </div>
+          <Brand />
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
           <Outlet />

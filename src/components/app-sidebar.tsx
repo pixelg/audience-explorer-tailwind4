@@ -1,15 +1,15 @@
 import * as React from "react"
 import {
-  AudioWaveform,
-  BookOpen,
-  Bot,
+  RadioTower,
   Command,
   Frame,
-  GalleryVerticalEnd,
-  // Map,
-  PieChart,
+  ChartColumn,
+  FileChartColumnIncreasing,
+  ChartCandlestick,
+  Megaphone,
   Settings2,
-  SquareTerminal,
+  Handshake,
+  Telescope
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -23,7 +23,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import {Brand} from "@/components/brand.tsx";
+import {TeamSwitcher} from "@/components/team-switcher.tsx";
 
 // This is sample data.
 const data = {
@@ -34,49 +34,37 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
+      name: "Sinclair",
+      logo: RadioTower,
+      plan: "",
     },
     {
       name: "Evil Corp.",
       logo: Command,
-      plan: "Free",
+      plan: "",
     },
   ],
   navMain: [
     {
-      title: "Metrics",
+      title: "Ad Campaigns",
       url: "#",
-      icon: SquareTerminal,
+      icon: Megaphone,
       isActive: true,
       items: [
         {
-          title: "Bar Chart",
-          url: "/bar-chart",
-          icon: Frame,
+          title: "Just Do It",
+          url: "#",
         },
         {
-          title: "Box Plot Chart",
-          url: "/box-plot-chart",
-          icon: PieChart,
-        },
-        {
-          title: "Sinclair Affiliates",
-          url: "/sinclair-affiliates",
-          icon: Frame,
+          title: "Belong Anywhere",
+          url: "#",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Audience Groups",
       url: "#",
-      icon: Bot,
+      icon: Telescope,
       items: [
         {
           title: "Genesis",
@@ -93,25 +81,25 @@ const data = {
       ],
     },
     {
-      title: "Documentation",
+      title: "Reports",
       url: "#",
-      icon: BookOpen,
+      icon: FileChartColumnIncreasing,
       items: [
         {
-          title: "Introduction",
-          url: "#",
-        },
+          title: "Overview",
+          url: "#"
+        }
+      ]
+    },
+    {
+      title: "Partners",
+      url: "#",
+      icon: Handshake,
+      items: [
         {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
+          title: "Sinclair Affiliates",
+          url: "/sinclair-affiliates",
+          icon: Frame,
         },
       ],
     },
@@ -141,20 +129,15 @@ const data = {
   ],
   projects: [
     {
-      name: "Bar Chart",
+      name: "Campaign Performance",
       url: "/bar-chart",
-      icon: Frame,
+      icon: ChartColumn,
     },
     {
-      name: "Box Plot Chart",
+      name: "Audience Insights",
       url: "/box-plot-chart",
-      icon: PieChart,
+      icon: ChartCandlestick,
     },
-    // {
-    //   name: "Travel",
-    //   url: "#",
-    //   icon: Map,
-    // },
   ],
 }
 
@@ -162,8 +145,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <Brand />
-        {/*<TeamSwitcher teams={data.teams} />*/}
+        <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />

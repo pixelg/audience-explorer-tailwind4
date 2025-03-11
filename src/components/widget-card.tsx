@@ -1,19 +1,21 @@
 // import logo from "@/assets/blue-logo.svg"
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card.tsx";
 
-type WidgetCardProps = {
-  p?: number;
+interface WidgetCardProps {
+  title?: string;
+  description?: string;
 }
 
-const WidgetCard = ({...props} : WidgetCardProps) => {
+
+const WidgetCard = ({title = "Widget", description, ...props} : WidgetCardProps) => {
   return (
     <Card {...props} className='w-full h-full overflow-hidden'>
       <CardHeader>
-        <CardTitle>Widget</CardTitle>
+        <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.</p>
+        {description ? <p>{description}</p> : <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>}
       </CardContent>
     </Card>
   )
