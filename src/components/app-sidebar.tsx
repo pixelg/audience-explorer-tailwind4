@@ -1,29 +1,22 @@
 import * as React from "react"
 import {
-  RadioTower,
-  Command,
-  Frame,
-  ChartColumn,
-  FileChartColumnIncreasing,
   ChartCandlestick,
-  Megaphone,
-  Settings2,
+  ChartColumn,
+  Command,
+  FileChartColumnIncreasing,
+  Frame,
   Handshake,
+  Megaphone,
+  RadioTower,
+  Settings2,
   Telescope
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
 import { NavProjects } from "@/components/nav-projects"
 import { NavUser } from "@/components/nav-user"
-// import { TeamSwitcher } from "@/components/team-switcher"
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarHeader,
-  SidebarRail,
-} from "@/components/ui/sidebar"
-import {TeamSwitcher} from "@/components/team-switcher.tsx";
+import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail, } from "@/components/ui/sidebar"
+import { TeamSwitcher } from "@/components/team-switcher.tsx";
 
 // This is sample data.
 const data = {
@@ -52,7 +45,7 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "Just Do It",
+          title: "Joe's Plumbing",
           url: "#",
         },
         {
@@ -141,20 +134,20 @@ const data = {
   ],
 }
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+        <TeamSwitcher teams={data.teams}/>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        <NavMain items={data.navMain}/>
+        <NavProjects projects={data.projects}/>
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser user={data.user}/>
       </SidebarFooter>
-      <SidebarRail />
+      <SidebarRail/>
     </Sidebar>
   )
 }

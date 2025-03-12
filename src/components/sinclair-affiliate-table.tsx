@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {createClient} from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 import { Database } from "@/types/SinclairAffiliateTypes.ts";
 import {
   Table,
@@ -13,20 +13,21 @@ import {
 } from "@/components/ui/table.tsx";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string;
+
 const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
 const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_KEY)
 
 type SinclairAffiliate = Database["public"]["Tables"]["sinclair_affiliates"]["Row"];
 
-export const SinclairAffiliateTable = ()=>  {
-  const [affiliates, setAffiliates] = useState<SinclairAffiliate[]>([]);
+export const SinclairAffiliateTable = () => {
+  const [ affiliates, setAffiliates ] = useState<SinclairAffiliate[]>([]);
 
   useEffect(() => {
     loadSinclairAffiliates();
   }, []);
 
   async function loadSinclairAffiliates() {
-    const { data, error } = await supabase
+    const {data, error} = await supabase
       .from('sinclair_affiliates')
       .select('*');
 
