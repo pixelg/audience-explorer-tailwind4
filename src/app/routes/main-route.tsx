@@ -9,7 +9,7 @@ export const MainRoute = () =>
         <WidgetCard title="Lovin' It - Campaign"/>
       </div>
       <div className="aspect-video rounded-xl bg-muted/50 p-2">
-        <WidgetCard title="David Kome - Campaign" description="The attorney that rocks!"/>
+        <WidgetCard />
       </div>
       <div className="aspect-video rounded-xl bg-muted/50 p-2">
         <WidgetCard/>
