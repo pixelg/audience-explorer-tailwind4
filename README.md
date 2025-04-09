@@ -11,12 +11,12 @@ _SparrowTV's Audience Explorer enables media companies to create and manage prec
 - **Package/Dependency manager:** [pnpm v10](https://pnpm.io)
 - **Language:** [Typescript v5](https://www.typescriptlang.org)
 - **UI Components:** [TailwindCSS v4](https://tailwindcss.com/), [Shadcn](https://ui.shadcn.com/), [Storybook v8.5](https://storybook.js.org/)
-- **Libraries:** React Router 7, Tanstack/Query, ?Zustand? (use state manager or context)
+- **Libraries:** React Router 7, Tanstack/Query
 - **Tooling, testing, build:** [Vite](https://vite.dev/), vite-test, [Playwright](https://playwright.dev/)
 - **SCM CI/CD:** Git, GitHub, GitHub Actions, GitHub Projects
-- **Chart/Graph** TODO: [nivo](https://nivo.rocks/bar/), [chart.js](https://www.chartjs.org/), [D3.js](https://d3js.org/)
-- **?DB/Dataflow/MQ?**: TODO: Postgres, MariaDB, MongoDB, RabbitMQ, REDIS, Firebase
-- **?Hosting/Cloud?:** TODO: AWS (Lambda, CDK, SAM), GCP,
+- **Chart/Graph** [chart.js](https://www.chartjs.org/)
+- **DB:** [supabase](https://supabase.com/)
+- **deployment:** [Vercel](https://vercel.com/)
 
 ---
 
